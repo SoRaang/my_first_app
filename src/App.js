@@ -1,25 +1,21 @@
+import TodaysPlan from './TodaysPlan';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    const isReact = true;
+
+    return (
+        <div> { /** 컨테이너로 감싸야 함 */ }
+            <h1 style={{ backgroundColor: 'blue', color: 'yellow' }}>첫번째</h1><br />
+            <h2 className="my-class">리액트 실습</h2><br />
+            <h3>화이팅</h3>
+
+            <p>{ isReact === true ? '리액트입니다' : '리액트가 아닙니다' }</p>
+
+            <TodaysPlan />
+        </div>
+    );
 }
 
 export default App;
