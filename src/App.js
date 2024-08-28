@@ -1,19 +1,25 @@
-import TodaysPlan from './TodaysPlan';
-import logo from './logo.svg';
+import HeaderComponent from './components/HeaderComponent';
+import BodyComponent from './components/BodyComponent';
+import FooterComponent from './components/FooterComponent';
+import DefaultPropTest from './components/DefaultPropTest';
+
 import './App.css';
+import Wrapper from './components/Wrapper';
 
 function App() {
-    const isReact = true;
-
     return (
-        <div> { /** 컨테이너로 감싸야 함 */ }
-            <h1 style={{ backgroundColor: 'blue', color: 'yellow' }}>첫번째</h1><br />
-            <h2 className="my-class">리액트 실습</h2><br />
-            <h3>화이팅</h3>
+        <div id="wrap">
+            <HeaderComponent />
 
-            <p>{ isReact === true ? '리액트입니다' : '리액트가 아닙니다' }</p>
+            <BodyComponent />
 
-            <TodaysPlan />
+            <FooterComponent />
+
+            <DefaultPropTest name="김창완" age={ 30405 } address="부산" color1="slateblue" color2="yellowgreen" color3="crimson" />
+
+            <Wrapper>
+                리액트
+            </Wrapper>
         </div>
     );
 }
