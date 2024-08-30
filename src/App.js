@@ -15,6 +15,7 @@ import TextAreaComponent from './components/TextAreaComponent';
 import './App.css';
 import { useState } from 'react';
 import ImageComponent from './components/ImageComponent';
+import AddUpParent from './components/AddUpParent';
 
 function App() {
     const movieList = [ // .map()으로 컴포넌트 배열 출력을 하기 위한 임시 데이터
@@ -111,6 +112,8 @@ function App() {
             <TextAreaComponent />
 
             <ImageComponent />
+
+            <AddUpParent />
         </div>
     );
 }
