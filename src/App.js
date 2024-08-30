@@ -6,11 +6,15 @@ import MovieItem from './components/MovieItem';
 import Wrapper from './components/Wrapper';
 import MapExample from './components/MapExample';
 import Spread from './components/Spread';
+import LiftingState from './components/LiftingState';
+import LoginTest from './components/LoginTest';
+import EventTest from './components/EventTest';
+import FormTagTest from './components/FormTagTest';
+import TextAreaComponent from './components/TextAreaComponent';
 
 import './App.css';
 import { useState } from 'react';
-import LiftingState from './components/LiftingState';
-import LoginTest from './components/LoginTest';
+import ImageComponent from './components/ImageComponent';
 
 function App() {
     const movieList = [ // .map()으로 컴포넌트 배열 출력을 하기 위한 임시 데이터
@@ -99,6 +103,14 @@ function App() {
             <LiftingState />
 
             <LoginTest />
+
+            <EventTest />
+
+            <FormTagTest />
+
+            <TextAreaComponent />
+
+            <ImageComponent />
         </div>
     );
 }
